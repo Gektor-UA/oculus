@@ -1,0 +1,12 @@
+Друзья, в этом видосе я верстаю интересный сайтец, с множеством неочевидных на первый взгляд вещей. По максимум использую css grid потому что этот сайт предусматревает такую вечеринку.
+
+Макет + шрифты: https://drive.google.com/drive/folder...
+
+Мой курс по верстке  - https://from0to1.com.ua/
+
+Телеграм канал - https://t.me/from0to1com
+
+
+Большой гайд по гридам -  https://youtu.be/Pqh1UhslhYA
+О box-sizing - https://youtu.be/IH_V0duSGLo
+Видос по svg - https://youtu.be/Yzj8bBCq7Eg
