@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Helvetica', sans-serif;
+  src: url(../fonts/helvetica.woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Helvetica-bold', sans-serif;
+  src: url('../fonts/helvetica-bold.woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #5C5C5E;
+}
+a {
+  color: inherit;
+}
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* ----------------------------------------------------- */
+.header {
+  border-bottom: 1px solid #CACAD6;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.menu {
+  display: flex;
+  gap: 0 20px;
+}
+.basket {
+  position: relative;
+}
+.basket--on span {
+  font-size: 11px;
+  width: 15px;
+  height: 15px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  position: absolute;
+  bottom: -5px;
+  right: -2px;
+}
