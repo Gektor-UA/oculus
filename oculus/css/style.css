@@ -26,6 +26,7 @@ a {
   margin: 0 auto;
 }
 /* ----------------------------------------------------- */
+/* ---HEADER--- */
 .header {
   border-bottom: 1px solid #CACAD6;
 }
@@ -56,4 +57,49 @@ a {
   position: absolute;
   bottom: -5px;
   right: -2px;
+}
+/* ------------ */
+/* ---TOP--- */
+.top {
+  min-height: calc(100vh - 81px);
+  background-image: url(../images/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+.title {
+  padding-top: 10%;
+  font-size: 96px;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+.top__text {
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+.buttons {
+  display: flex;
+}
+.buy-btn {
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  text-transform: uppercase;
+  padding: 20px 110px;
+  color: #F6F4F5;
+}
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid;
+  border-image-slice: 1;
+  padding: 20px 104px;
+}
+.btn-g {
+  border-image-source: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+}
+.buy__text   {
+  padding-top: 6px;
+  font-size: 13px;
 }
