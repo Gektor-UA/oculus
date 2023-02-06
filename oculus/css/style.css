@@ -160,6 +160,7 @@ a {
   gap: 40px;
   opacity: 0;
   position: absolute;
+  transition: opacity .5s ease;
 }
 .tabs__content-item--active {
   opacity: 1;
