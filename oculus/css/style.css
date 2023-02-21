@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   src: url(../fonts/helvetica.woff2);
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
-  font-family: 'Helvetica-bold', sans-serif;
-  src: url('../fonts/helvetica-bold.woff2');
+  font-family: "Helvetica-bold", sans-serif;
+  src: url("../fonts/helvetica-bold.woff2");
   font-style: normal;
   font-weight: 700;
 }
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
-  color: #5C5C5E;
+  color: #5c5c5e;
 }
 a {
   color: inherit;
@@ -32,7 +32,7 @@ a {
 /* ----------------------------------------------------- */
 /* ---HEADER--- */
 .header {
-  border-bottom: 1px solid #CACAD6;
+  border-bottom: 1px solid #cacad6;
 }
 .nav {
   display: grid;
@@ -93,10 +93,10 @@ a {
   display: flex;
 }
 .buy-btn {
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   text-transform: uppercase;
   padding: 20px 110px;
-  color: #F6F4F5;
+  color: #f6f4f5;
 }
 .btn {
   text-transform: uppercase;
@@ -106,9 +106,9 @@ a {
   padding: 20px 104px;
 }
 .btn-g {
-  border-image-source: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  border-image-source: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
 }
-.buy__text   {
+.buy__text {
   padding-top: 6px;
   font-size: 13px;
 }
@@ -129,7 +129,7 @@ a {
   text-transform: uppercase;
   font-size: 36px;
   margin-bottom: 2px;
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -160,7 +160,7 @@ a {
   gap: 40px;
   opacity: 0;
   position: absolute;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
 }
 .tabs__content-item--active {
   opacity: 1;
@@ -178,7 +178,7 @@ a {
   grid-column: 2/-1;
   width: 280px;
   height: 150px;
-  background-image: url('../images/content-bg.jpg');
+  background-image: url("../images/content-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -190,7 +190,7 @@ a {
 }
 .tabs__content-video span {
   font-size: 13px;
-  color: #F6F4F5;
+  color: #f6f4f5;
   margin-top: 9px;
 }
 .video__btn {
@@ -214,7 +214,7 @@ a {
 .game__descr-title {
   font-size: 36px;
   text-transform: uppercase;
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
@@ -227,13 +227,13 @@ a {
   text-transform: uppercase;
   display: inline-block;
   padding: 16px 48px;
-  border: 1px solid #BC10D8;
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  border: 1px solid #bc10d8;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .game__item {
-  border: 1px solid #BC10D8;
+  border: 1px solid #bc10d8;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -250,9 +250,52 @@ a {
   margin-bottom: 40px;
 }
 .game__item-link {
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: auto;
 }
 /* ---------- */
+/* ---BUY--- */
+.buy {
+  margin-bottom: 110px;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+.buy__bg {
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.1;
+  z-index: -1;
+
+  font-weight: 700;
+  font-size: 400px;
+  line-height: 400px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: line-text 6s linear 1s infinite;
+}
+/* ---ANIMATION--- */
+@keyframes line-text {
+  from {
+    transform: translateX(115%);
+    transform-origin: left center;
+  }
+  to {
+    transform: translateX(-155%);
+    transform-origin: right center;
+  }
+}
+/* --------------- */
+.buy__img {
+  margin-bottom: 30px;
+}
+.buy .buttons {
+  justify-content: center;
+  margin-bottom: 10px;
+}
+/* --------- */
