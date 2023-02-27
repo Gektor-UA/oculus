@@ -327,3 +327,33 @@ a {
   -webkit-text-fill-color: transparent;
 }
 /* --------------- */
+/* ---PROMO--- */
+.promo {
+  margin-bottom: 100px;
+}
+.promo__inner {
+  background-image: url(../images/promo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  text-align: center;
+  position: relative;
+}
+.promo__btn {
+  font-weight: 700;
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* ----------- */
