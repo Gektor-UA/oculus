@@ -1,3 +1,5 @@
+@import url("reset.css");
+/* @import url('style-adaptive.css'); */
 @font-face {
   font-family: "Helvetica", sans-serif;
   src: url(../fonts/helvetica.woff2);
@@ -407,7 +409,7 @@ a {
   margin-top: auto;
 }
 .accessoires__item-btn {
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
@@ -444,15 +446,15 @@ a {
 .form__input {
   padding: 22px 70px 22px 0;
   width: 100%;
-  border-bottom: 1px solid #CACAD6;
+  border-bottom: 1px solid #cacad6;
 }
 .form__input::placeholder {
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  color: #CACAD6;
+  color: #cacad6;
 }
 .form__btn {
   position: absolute;
@@ -460,10 +462,10 @@ a {
   bottom: 5px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #5C5C5E; 
+  color: #5c5c5e;
   width: 50px;
   height: 50px;
-  background: #CACAD6;
+  background: #cacad6;
   border-radius: 50%;
 }
 .contacts__text {
@@ -478,8 +480,8 @@ a {
 /* ---FOOTER--- */
 .footer {
   margin-bottom: 44px;
-  border-top: 1px solid #CACAD6;
-  border-bottom: 1px solid #CACAD6;
+  border-top: 1px solid #cacad6;
+  border-bottom: 1px solid #cacad6;
   padding: 30px 0;
 }
 .social {
@@ -488,3 +490,31 @@ a {
   gap: 20px;
 }
 /* ------------ */
+
+/* ---ADAPTIVE--- */
+@media (max-width: 768px) {
+  .title {
+    font-size: 66px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+}
+@media (max-width: 568px) {
+  .top {
+    text-align: center;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .title {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+}
+/* -------------- */
+/* @import url('style-adaptive.css'); */
