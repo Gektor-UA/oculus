@@ -475,3 +475,16 @@ a {
   line-height: 18px;
 }
 /* -------------- */
+/* ---FOOTER--- */
+.footer {
+  margin-bottom: 44px;
+  border-top: 1px solid #CACAD6;
+  border-bottom: 1px solid #CACAD6;
+  padding: 30px 0;
+}
+.social {
+  display: flex;
+  justify-self: end;
+  gap: 20px;
+}
+/* ------------ */
