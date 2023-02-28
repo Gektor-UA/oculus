@@ -322,7 +322,7 @@ a {
   font-size: 36px;
   line-height: 41px;
   text-transform: uppercase;
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -342,8 +342,8 @@ a {
 }
 .promo__btn {
   font-weight: 700;
-  color: #FFFFFF;
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  color: #ffffff;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -357,3 +357,65 @@ a {
   margin: 0 auto;
 }
 /* ----------- */
+/* ---ACCESSORIES--- */
+.accessoires {
+  margin-bottom: 100px;
+}
+.accessoires__title {
+  margin-bottom: 30px;
+}
+.accessoires__text {
+  margin-bottom: 30px;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.accessoires__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.accessoires__item {
+  padding: 20px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.accessoires__item-img {
+  margin-bottom: 10px;
+}
+.accessoires__item-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #070707;
+  min-height: 67px;
+}
+.accessoires__item-text {
+  line-height: 18px;
+  margin-bottom: 40px;
+  margin-top: auto;
+}
+.accessoires__item-price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #070707;
+  margin-bottom: 20px;
+  margin-top: auto;
+}
+.accessoires__item-btn {
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 6px;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+}
+/* ----------------- */
