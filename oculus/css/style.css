@@ -18,7 +18,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: #5c5c5e;
-  min-width: 320px;
+  min-width: 300px;
   overflow-x: hidden;
 }
 a {
@@ -508,6 +508,15 @@ a {
 /* ------------ */
 
 /* ---ADAPTIVE--- */
+@media (max-width: 1140px) {
+  .footer .menu {
+    display: none;
+  } 
+  .footer .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 @media (max-width: 992px) {
   .tabs {
     display: block;
@@ -593,6 +602,11 @@ a {
   }
   .tabs__content-item {
     display: block;
+    height: 0;
+    position: static;
+  }
+  .tabs__content-item--active {
+    height: auto;
   }
   .tabs__content-video {
     margin-top: 20px;
@@ -618,6 +632,13 @@ a {
   }
   .accessoires__text {
     font-size: 28px;
+  }
+  .footer .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer .social {
+    order: -1;
   }
 }
 @media (max-width: 420px) {
