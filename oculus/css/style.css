@@ -170,6 +170,7 @@ a {
 .tabs__content-img {
   grid-row: 1/-1;
   align-self: stretch;
+  object-fit: cover;
 }
 .tabs__content-box h3 {
   font-weight: 400;
@@ -492,6 +493,19 @@ a {
 /* ------------ */
 
 /* ---ADAPTIVE--- */
+@media (max-width: 992px) {
+  .tabs {
+    display: block;
+  }
+  .tabs__btn {
+    display: block;
+    column-count: 2;
+  }
+  .tabs__btn-item {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 768px) {
   .title {
     font-size: 66px;
@@ -507,6 +521,17 @@ a {
   .buttons {
     flex-direction: column;
   }
+  .features__titlles {
+    display: block;
+  }
+  .tabs__content-item {
+    display: block;
+  }
+  .tabs__content-video {
+    margin-top: 20px;
+    width: auto;
+    height: 250px;
+  }
 }
 @media (max-width: 420px) {
   .title {
@@ -514,6 +539,15 @@ a {
   }
   .subtitle {
     font-size: 20px;
+  }
+  .tabs__btn {
+    column-count: 1;
+  }
+  .features {
+    padding: 50px 0;
+  }
+  .features__text {
+    font-size: 30px;
   }
 }
 /* -------------- */
